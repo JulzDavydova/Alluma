@@ -5,6 +5,23 @@ describe('Home Page', () => {
         homePage.openHomePage();
         homePage.homePageIsOpened();
     });
+
+    it ('tab title is displayed', () => {
+        homePage.openHomePage();
+        homePage.tabTitleIsDisplayed();
+    });
+
+    describe('Login Form', () => {
+        it('is displayed', () => {
+            homePage.openHomePage();
+            homePage.loginFormIsDisplayed();
+        });
+
+        it('has correct title', () =>{
+            homePage.openHomePage();
+            homePage.formTitleIsCorrect();
+        })
+    });
 });
 
 

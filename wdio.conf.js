@@ -215,8 +215,9 @@ exports.config = {
      * Function to be executed after a test (in Mocha/Jasmine).
      */
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
-        if (!passed) {
-            browser.takeScreenshot();
+        console.log(test);
+        if (test.passed === false) {
+            browser.takeScreenshot(`.temp/screenshots/${test.fullTitle}.png`);
         }
     },
 
