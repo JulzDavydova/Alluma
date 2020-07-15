@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594793285316' stop='1594793297776'>
+    <name>Home</name>
+    <title>Home</title>
+    <test-cases>
+        <test-case start='1594793285316' status='passed' stop='1594793297776'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.116'/>
+            </parameters>
+            <steps>
+                <step start='1594793285320' status='passed' stop='1594793297670'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='caf04ec7-2463-4f0b-a5f3-fea51fa7b9a2-attachment.json' type='application/json' size='41'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594793297672' status='passed' stop='1594793297722'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='3eca8c22-1976-466a-a305-2668243a53ff-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='c4473668-691c-4936-8297-edca834a64d9-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594793297728' status='passed' stop='1594793297775'>
+                    <name>GET /session/:sessionId/element/0.6663516261141913-1/text</name>
+                    <title>GET /session/:sessionId/element/0.6663516261141913-1/text</title>
+                    <attachments>
+                        <attachment title='Response' source='4b4b5b8f-0f62-4d46-921f-575e21ffb865-attachment.json' type='application/json' size='24'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

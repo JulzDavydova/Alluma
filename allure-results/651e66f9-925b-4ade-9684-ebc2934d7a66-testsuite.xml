@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594794210025' stop='1594794210566'>
+    <name>Home</name>
+    <title>Home</title>
+    <test-cases>
+        <test-case start='1594794210026' status='broken' stop='1594794210565'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.116'/>
+            </parameters>
+            <steps>
+                <step start='1594794210031' status='passed' stop='1594794210564'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='f0629ec0-3e63-4744-ad56-bd32b71a64b8-attachment.png' type='image/png' size='13444'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>_home.default.openHomePage is not a function</message>
+                <stack-trace>TypeError: _home.default.openHomePage is not a function
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/home.test.js:6:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
