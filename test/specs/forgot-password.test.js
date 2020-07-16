@@ -45,6 +45,61 @@ describe('Forgot Password', () => {
             forgotPasswordPage.usernameUrlIsCorrect();
         });
 
-    });    
+    });  
 
+    describe('Username Input Field', () => {
+
+        it('username label is displayed and is correct',() => {
+            forgotPasswordPage.usernameLabelIsDisplayedCorrectly();
+        });
+
+        it('username input field is displayed',() => {
+            forgotPasswordPage.usernameInputFieldDisplayed();
+        });
+
+        it('username input symbols',() => {
+            forgotPasswordPage.inputSymbolsUsername();
+        });
+
+        it('username erase symbols',() => {
+            forgotPasswordPage.eraseSymbolsUsername();
+        });
+
+        it('input 99 symbols username field',() => {
+            forgotPasswordPage.input99SymbolsUsername();
+        });
+
+        it('input 100 symbols username field',() => {
+            forgotPasswordPage.input100SymbolsUsername();
+        });
+
+        it('input 101 symbols username field',() => {
+            forgotPasswordPage.input101SymbolsUsername();
+        });
+
+        it('submit empty username',() => {
+            forgotPasswordPage.submitEmptyUsername();
+        });
+
+    });   
+
+    describe('Buttons', () => {
+
+        it('cancel is displayed',() => {
+             forgotPasswordPage.cancelBtnIsDisplayed();
+         });  
+
+        it('cancel has correct title',() => {
+            forgotPasswordPage.cancelBtnTitleIsCorrect();
+        }); 
+
+        it('continue is displayed',() => {
+            forgotPasswordPage.continueBtnIsDisplayed();
+        });  
+
+        it('continue has correct title',() => {
+            forgotPasswordPage.continueBtnTitleIsCorrect();
+         });  
+
+    });
 });

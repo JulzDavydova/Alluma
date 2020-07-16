@@ -47,80 +47,76 @@ class ForgotPasswordPage extends BasePage {
         assert.isTrue(link.getAttribute('href').includes(expected.usernameUrl));
     }
 
-    emailLabelIsDisplayedCorrectly() {
-        const label = $$(selector.labelFor)[0];
+    usernameLabelIsDisplayedCorrectly() {
+        const label = $(selector.labelFor);
         label.isDisplayed();
-        assert.equal(label.getText(), expected.inputFieldTitle);
+        assert.equal(label.getText(), expected.userNameFieldTitle);
     } 
 
-    emailInputFieldDisplayed() {
-        $(selector.emailInput).isDisplayed();
+    usernameInputFieldDisplayed() {
+        $(selector.usernameInput).isDisplayed();
     } 
 
-    inputSymbolsEmail() {
-        const email = $(selector.emailInput);
-        email.setValue('456Password');
-        assert.equal(email.getValue(), '456Password');
+    inputSymbolsUsername() {
+        const username = $(selector.usernameInput);
+        username.setValue('Allum');
+        assert.equal(username.getValue(), 'Allum');
     }
-    eraseSymbolsEmail() {
-        const email = $(selector.emailInput);
-        email.setValue('Davydova');
+    eraseSymbolsUsername() {
+        const username = $(selector.usernameInput);
+        username.setValue('Ukrainian');
         browser.keys('Backspace');
-        assert.equal(email.getValue(), 'Davydov');
+        assert.equal(username.getValue(), 'Ukrainia');
     }
 
-    input199SymbolsEmail() {
-        const email = $(selector.emailInput);
-        email.setValue('');
-        this.sendNumberOfKeys(199);
-        let string199 = this.generateStringWithLength(199);
-        assert.equal(email.getValue(), string199);
+    input99SymbolsUsername() {
+        const username = $(selector.usernameInput);
+        username.setValue('');
+        this.sendNumberOfKeys(99);
+        let string99 = this.generateStringWithLength(99);
+        assert.equal(username.getValue(), string99);
     }
 
-    input200SymbolsEmail() {
-        const email = $(selector.emailInput);
-        email.setValue('');
-        this.sendNumberOfKeys(200);
-        let string200 = this.generateStringWithLength(200);
-        assert.equal(email.getValue(), string200);
+    input100SymbolsUsername() {
+        const username = $(selector.usernameInput);
+        username.setValue('');
+        this.sendNumberOfKeys(100);
+        let string100 = this.generateStringWithLength(100);
+        assert.equal(username.getValue(), string100);
     }
 
-    input201Symbols() {
-        const email = $(selector.emailInput);
-        email.setValue('');
-        this.sendNumberOfKeys(201);
-        let string200 = this.generateStringWithLength(200);
-        assert.equal(email.getValue(), string200);
+    input101SymbolsUsername() {
+        const username = $(selector.usernameInput);
+        username.setValue('');
+        this.sendNumberOfKeys(101);
+        let string200 = this.generateStringWithLength(100);
+        assert.equal(username.getValue(), string200);
     }
 
-    submitEmptyEmail() {
-        $(selector.emailInput).setValue('');
-        $$(selector.buttons)[1].click();
-        const errorMessage = $$(selector.errorMessages)[0];
+    submitEmptyUsername() {
+        $(selector.usernameInput).setValue('');
+        $$(selector.btns)[1].click();
+        const errorMessage = $(selector.errorMessages);
         errorMessage.waitForDisplayed({ timeout: 10000 });
         assert.equal(errorMessage.getText(), expected.errorMsg);
     }
 
-    backLoginBtnIsDisplayed() {
-        $$(selector.buttons)[0].isDisplayed();
+    cancelBtnIsDisplayed() {
+        $$(selector.btns)[0].isDisplayed();
     }
-    backLoginBtnTitleIsCorrect() {
-        const title = $$(selector.buttons)[0];
-        assert.equal(title.getText(), expected.btnBackTitle);
+    cancelBtnTitleIsCorrect() {
+        const title = $$(selector.btns)[0];
+        assert.equal(title.getText(), expected.btnCancel);
     }
 
-    recoverBtnIsDisplayed() {
-        $$(selector.buttons)[1].isDisplayed();
+    continueBtnIsDisplayed() {
+        $$(selector.btns)[1].isDisplayed();
     }   
 
-    recoverBtnTitleIsCorrect() {
-        const title = $$(selector.buttons)[1];
-        assert.equal(title.getText(), expected.btnRecoverTitle);
+    continueBtnTitleIsCorrect() {
+        const title = $$(selector.btns)[1];
+        assert.equal(title.getText(), expected.btnContinue);
     }  
-
-    forgotPasswordIsDisplayed() {
-        $(selector.link).isDisplayed();
-    } 
 
     
 

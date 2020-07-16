@@ -6,7 +6,7 @@ export default {
     userNameFieldTitle: 'User name required',
     errorMsg: 'The Username field is required.',
     btnCancel: 'Cancel',
-    btnContinue: 'Continue',
+    btnContinue: 'Continue   >',
     tabTitle: 'Connections',
     usernameUrl: '/Account/ForgotUsername?origin=',
 }

@@ -1,0 +1,130 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594943329420' stop='1594943329560'>
+    <name>Forgot Password: Buttons</name>
+    <title>Forgot Password: Buttons</title>
+    <test-cases>
+        <test-case start='1594943329427' status='passed' stop='1594943329466'>
+            <name>cancel is displayed</name>
+            <title>cancel is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594943329432' status='passed' stop='1594943329443'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='40ad0cbf-2aab-43e9-b7aa-5e9221e7a35c-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='65c71874-e2d3-4ddd-8d73-5fbb66beb780-attachment.json' type='application/json' size='98'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594943329449' status='passed' stop='1594943329465'>
+                    <name>GET /session/:sessionId/element/0.40842527586294364-2/displayed</name>
+                    <title>GET /session/:sessionId/element/0.40842527586294364-2/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='42051cbf-c514-456b-bcc8-b1e99dc146b6-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594943329470' status='passed' stop='1594943329508'>
+            <name>cancel has correct title</name>
+            <title>cancel has correct title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594943329471' status='passed' stop='1594943329485'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='f82b8333-2d2f-4afc-9e6d-866e5f04aece-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='2434bb1a-de15-4cd1-b482-ca197f6895ba-attachment.json' type='application/json' size='98'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594943329487' status='passed' stop='1594943329507'>
+                    <name>GET /session/:sessionId/element/0.40842527586294364-2/text</name>
+                    <title>GET /session/:sessionId/element/0.40842527586294364-2/text</title>
+                    <attachments>
+                        <attachment title='Response' source='dff36f10-9c7c-47c1-8f5b-cd3aa6323c50-attachment.json' type='application/json' size='8'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594943329508' status='broken' stop='1594943329530'>
+            <name>continue is displayed</name>
+            <title>continue is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>selector needs to be typeof `string` or `function`</message>
+                <stack-trace>Error: selector needs to be typeof `string` or `function`
+                    at $$ (/Users/julia/Alluma/TEST/Alluma/node_modules/@wdio/runner/build/index.js:191:37)
+                    at ForgotPasswordPage.continueBtnIsDisplayed (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-password.page.js:113:9)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:97:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594943329531' status='failed' stop='1594943329560'>
+            <name>continue has correct title</name>
+            <title>continue has correct title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594943329531' status='passed' stop='1594943329540'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='87239754-feca-42e8-9167-8bf93291adf2-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='a4d3c7b9-f113-4367-981a-c62db0a18252-attachment.json' type='application/json' size='98'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594943329542' status='passed' stop='1594943329556'>
+                    <name>GET /session/:sessionId/element/0.40842527586294364-3/text</name>
+                    <title>GET /session/:sessionId/element/0.40842527586294364-3/text</title>
+                    <attachments>
+                        <attachment title='Response' source='b3d907e2-2697-4d69-8c07-12f0c623909f-attachment.json' type='application/json' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected 'Continue   >' to equal 'Continue'</message>
+                <stack-trace>AssertionError: expected 'Continue   >' to equal 'Continue'
+                    at ForgotPasswordPage.continueBtnTitleIsCorrect (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-password.page.js:118:16)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:101:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
