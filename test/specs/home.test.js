@@ -1,10 +1,8 @@
 import homePage from '../pages/home.page';
 
 describe('Home Page', () => {
-    homePage.openHomePage();
-
     it('should be opened', () => {
-        // homePage.openHomePage();
+        homePage.openHomePage();
         homePage.homePageGreeting();
     });
 

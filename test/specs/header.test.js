@@ -1,8 +1,9 @@
-import assert from 'assert';
+import headerPage from '../pages/header.page';
 
-describe('', () => {
-    it('', () => {
-        //browser.url('/');
-        //browser.pause(2000);
+describe('Header', () => {
+    headerPage.openHomePage();
+
+    it('header title is correct', () => {
+      headerPage.headerTitle();
     });
 });
