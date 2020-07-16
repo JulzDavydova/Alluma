@@ -106,14 +106,14 @@ class ForgotUsernamePage extends BasePage {
         assert.equal(link.getText(), expected.linkText);  
     }
 
-    clickForgotPassword() {
+    forgotPasswordIsClickable() {
         const link = $(selector.link);
         link.isClickable();
     }  
 
     passwordUrlIsCorrect() {
         const link = $(selector.link);
-        assert.isTrue(link.getAttribute('href').startsWith(expected.passwordUrl));
+        assert.isTrue(link.getAttribute('href').includes(expected.passwordUrl));
     }
 
 }

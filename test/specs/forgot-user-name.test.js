@@ -95,7 +95,7 @@ describe('Forgot Username', () => {
             }); 
     
             it('is clickable',() => {
-                forgotUserNamePage.clickForgotPassword();
+                forgotUserNamePage.forgotPasswordIsClickable();
             });   
 
             it('url is correct',() => {

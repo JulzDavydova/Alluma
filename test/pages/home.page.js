@@ -51,6 +51,12 @@ class HomePage extends BasePage {
         const link = $$(selector.links)[2];
         assert.equal(link.getText(), expected.passwordLink);
     }
+
+    clickForgotPasswordLink() {
+        const link = $$(selector.links)[2];
+        link.click();
+    }
+
     screenerUrlIsCorrect() {
         const link = $$(selector.links)[0];
         assert.equal(link.getAttribute('href'), expected.screenerUrl);
