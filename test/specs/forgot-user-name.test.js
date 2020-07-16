@@ -22,7 +22,7 @@ describe('Forgot Username', () => {
         });
 
         it('has correct text block',() => {
-            forgotUserNamePage.textBlockIsDisplayed();
+            forgotUserNamePage.textBlockIsDisplayedCorrectly();
         });
 
     });    

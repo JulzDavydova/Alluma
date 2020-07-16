@@ -8,5 +8,5 @@ export default {
     btnCancel: 'Cancel',
     btnContinue: 'Continue',
     tabTitle: 'Connections',
-    usernameUrl: '',
+    usernameUrl: '/Account/ForgotUsername?origin=',
 }

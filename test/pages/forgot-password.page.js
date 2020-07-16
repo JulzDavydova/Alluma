@@ -8,22 +8,43 @@ class ForgotPasswordPage extends BasePage {
 
     goToRecoverPasswordPage() {
         this.openHomePage();
-        homePage.clickForgotUsenameLink();
-        $(selector.recoverTitle).waitForDisplayed({ timeout: 10000 });
+        homePage.clickForgotPasswordLink();
+        $(selector.forgotTitle).waitForDisplayed({ timeout: 10000 });
     }
 
     tabTitleIsDisplayed() {
         assert.equal(browser.getTitle(), expected.tabTitle);
     }
 
-    recoverUsernameFormIsDisplayed() {
-        $(selector.recoverUsernameForm).isDisplayed();
+    forgotPasswordFormIsDisplayed() {
+        $(selector.forgotPswForm).isDisplayed();
     }
 
-    textBlockIsDisplayed() {
-        const title = $(selector.recoverTitle);
+    textBlockIsDisplayedAndCorrect() {
+        const title = $(selector.forgotTitle);
         title.isDisplayed();
         assert.equal(title.getText(), expected.title);
+    }
+
+    textBlock2IsDisplayedAndCorrect() {
+        const title = $(selector.textBlock);
+        title.isDisplayed();
+        assert.equal(title.getText(), expected.textBlock);
+    }
+    forgotUsernameLinkIsDisplayedAndCorrect() {
+        const link = $(selector.link);
+        link.isDisplayed();
+        assert.equal(link.getText(), expected.linkText);  
+    }
+
+    forgotUsernameClickable() {
+        const link = $(selector.link);
+        link.isClickable();
+    }  
+
+    usernameUrlIsCorrect() {
+        const link = $(selector.link);
+        assert.isTrue(link.getAttribute('href').includes(expected.usernameUrl));
     }
 
     emailLabelIsDisplayedCorrectly() {
@@ -101,20 +122,7 @@ class ForgotPasswordPage extends BasePage {
         $(selector.link).isDisplayed();
     } 
 
-    forgotPasswordLinkIsCorrect() {
-        const link = $(selector.link);
-        assert.equal(link.getText(), expected.linkText);  
-    }
-
-    clickForgotPassword() {
-        const link = $(selector.link);
-        link.click();
-    }  
-
-    passwordUrlIsCorrect() {
-        const link = $(selector.link);
-        assert.isTrue(link.getAttribute('href').startsWith(expected.passwordUrl));
-    }
+    
 
 }
 

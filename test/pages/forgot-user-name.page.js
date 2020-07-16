@@ -20,7 +20,7 @@ class ForgotUsernamePage extends BasePage {
         $(selector.recoverUsernameForm).isDisplayed();
     }
 
-    textBlockIsDisplayed() {
+    textBlockIsDisplayedCorrectly() {
         const title = $(selector.recoverTitle);
         title.isDisplayed();
         assert.equal(title.getText(), expected.title);

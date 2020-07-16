@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594939726607' stop='1594939726629'>
+    <name>Forgot Password: Link forgot username</name>
+    <title>Forgot Password: Link forgot username</title>
+    <test-cases>
+        <test-case start='1594939726607' status='broken' stop='1594939726613'>
+            <name>is displayed and is correct</name>
+            <title>is displayed and is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>forgotUserNamePage is not defined</message>
+                <stack-trace>ReferenceError: forgotUserNamePage is not defined
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:37:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594939726616' status='broken' stop='1594939726625'>
+            <name>is clickable</name>
+            <title>is clickable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>forgotUserNamePage is not defined</message>
+                <stack-trace>ReferenceError: forgotUserNamePage is not defined
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:41:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594939726625' status='broken' stop='1594939726629'>
+            <name>url is correct</name>
+            <title>url is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>forgotUserNamePage is not defined</message>
+                <stack-trace>ReferenceError: forgotUserNamePage is not defined
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:45:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594939726449' stop='1594939726600'>
+    <name>Forgot Password: Forgot Password Form</name>
+    <title>Forgot Password: Forgot Password Form</title>
+    <test-cases>
+        <test-case start='1594939726449' status='broken' stop='1594939726458'>
+            <name>is displayed</name>
+            <title>is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>forgotUserNamePage is not defined</message>
+                <stack-trace>ReferenceError: forgotUserNamePage is not defined
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:17:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594939726459' status='broken' stop='1594939726461'>
+            <name>has correct title</name>
+            <title>has correct title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>forgotUserNamePage is not defined</message>
+                <stack-trace>ReferenceError: forgotUserNamePage is not defined
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:21:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594939726461' status='broken' stop='1594939726462'>
+            <name>text block is displayed and correct</name>
+            <title>text block is displayed and correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>forgotUserNamePage is not defined</message>
+                <stack-trace>ReferenceError: forgotUserNamePage is not defined
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-password.test.js:25:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594939726462' status='passed' stop='1594939726599'>
+            <name>text block2 is dislayed and correct</name>
+            <title>text block2 is dislayed and correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594939726463' status='passed' stop='1594939726558'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='faf715e2-15ff-4ff9-9004-5256d7fa1fde-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='8f45696e-1b90-4ebb-ae61-4a45551aa40b-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594939726560' status='passed' stop='1594939726580'>
+                    <name>GET /session/:sessionId/element/0.6314998628993984-2/displayed</name>
+                    <title>GET /session/:sessionId/element/0.6314998628993984-2/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='63f88caf-791a-4e0b-bede-ef6a7ae909ab-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594939726580' status='passed' stop='1594939726597'>
+                    <name>GET /session/:sessionId/element/0.6314998628993984-2/text</name>
+                    <title>GET /session/:sessionId/element/0.6314998628993984-2/text</title>
+                    <attachments>
+                        <attachment title='Response' source='32cccf45-a91b-4dc6-856f-23b19a8df3f4-attachment.json' type='application/json' size='79'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
