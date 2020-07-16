@@ -33,6 +33,12 @@ class HomePage extends BasePage {
        // assert.equal(link.getAttribute('href'), expected.screenerUrl);
         assert.equal(link.getText(), expected.screenerLink);
     }
+
+    forgotTextBlock(){
+        const text = $$(selector.forgotText)[1];
+        assert.equal(text.getText(), expected.forgotText);
+    }
+
     userNameLinkIsCorrect() {
         const link = $$(selector.links)[1];
        // assert.equal(link.getAttribute('href'), expected.screenerUrl);
@@ -68,7 +74,24 @@ class HomePage extends BasePage {
     lastTextBlockIsDisplayed() {
         const title = $$(selector.text)[1];
         assert.equal(title.getText(), expected.lastText);
-    }    
+    }  
+    
+    userNameInputFieldDisplayed() {
+        $(selector.userNameInput).isDisplayed();
+    }  
+    userNameLabelIsDisplayed() {
+        const label = $$(selector.labelFor)[0];
+        label.isDisplayed();
+        assert.equal(label.getText(), expected.userNLabel);
+    } 
+    passwordInputFieldDisplayed() {
+        $(selector.passwordInput).isDisplayed();
+    }  
+    passwordLabelIsDisplayed() {
+        const label = $$(selector.labelFor)[1];
+        label.isDisplayed();
+        assert.equal(label.getText(), expected.pLabel);
+    } 
 }
 
 

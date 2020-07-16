@@ -38,34 +38,64 @@ describe('Home Page', () => {
             homePage.text2IsDisplayed();
         });
 
-        it('screener link is correct',() =>{
-            // homePage.openHomePage();
-            homePage.screenerLinkIsCorrect();
+        it('forgot text block is displayed',()=>{
+            homePage.forgotTextBlock();
         });
 
-        it('user name link is correct',() =>{
-            // homePage.openHomePage();
-            homePage.userNameLinkIsCorrect();
+        describe('Screener', () => {
+            it('link text is correct',() =>{
+                // homePage.openHomePage();
+                homePage.screenerLinkIsCorrect();
+            });
+
+            it('url is correct',() => {
+                // homePage.openHomePage();
+                homePage.screenerUrlIsCorrect();
+            });
         });
 
-        it('password link is correct',() =>{
-            // homePage.openHomePage();
-            homePage.passwordLinkIsCorrect();
+        describe('User Name Input Field', () => {
+            it('is displayed', () => {
+                homePage.userNameInputFieldDisplayed();
+            });
+
+            it('has correct title', () => {
+                homePage.userNameLabelIsDisplayed()
+            })
+        })
+
+        describe('Password Input Field', () => {
+            it('is displayed', () => {
+                homePage.passwordInputFieldDisplayed();
+            });
+
+            it('has correct title', () => {
+                homePage.passwordLabelIsDisplayed();
+            })
+        })
+
+        describe('Remind User Name', () => {
+            it('link text is correct',() => {
+                // homePage.openHomePage();
+                homePage.userNameLinkIsCorrect();
+            });
+
+            it('url is correct',() =>{
+                // homePage.openHomePage();
+                homePage.userNameUrlIsCorrect();
+            });
         });
 
-        it('screener url is correct',() =>{
-            // homePage.openHomePage();
-            homePage.screenerUrlIsCorrect();
-        });
+        describe('Remind Password', () => {
+            it('link text is correct',() =>{
+                // homePage.openHomePage();
+                homePage.passwordLinkIsCorrect();
+            });
 
-        it('user name url is correct',() =>{
-            // homePage.openHomePage();
-            homePage.userNameUrlIsCorrect();
-        });
-
-        it('password url is correct',() =>{
-            // homePage.openHomePage();
-            homePage.passwordUrlIsCorrect();
+            it('url is correct',() =>{
+                // homePage.openHomePage();
+                homePage.passwordUrlIsCorrect();
+            });
         });
 
         it('text block is displayed',() =>{

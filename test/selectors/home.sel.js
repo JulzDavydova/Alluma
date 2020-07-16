@@ -5,5 +5,10 @@ export default {
     title1: '.gg-login-form-title1',
     links: '.gg-links-text > a',
     text:'.gg-login-form-title4',
+    userNameInput: '#Username',
+    labelFor: 'label[for="Username"]',
+    passwordInput: '#Password',
+    forgotText: 'label.gg-links-text',
+    loginBtn: '.gg-btn',
     
 }
