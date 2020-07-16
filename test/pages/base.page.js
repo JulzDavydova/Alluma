@@ -7,9 +7,20 @@ class BasePage {
     openHomePage() {
         browser.url('/');
     }
+    
     formTitleIsCorrect() {
        const title = $$(selector.formTitle)[0];
        assert.equal (title.getText(), expected.formTitle);
+    }
+
+    generateStringWithLength(length) {
+        let result = '';
+        for (let i = 0; i < length; i++) result += '1';
+        return result;
+    }
+
+    sendNumberOfKeys(length) {
+        for (let i = 0; i < length; i++) browser.keys('1');
     }
 }
 

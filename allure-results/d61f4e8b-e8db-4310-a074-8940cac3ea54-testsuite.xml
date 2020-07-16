@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594912409368' stop='1594912409415'>
+    <name>Home Page: Login Form: Remind Password</name>
+    <title>Home Page: Login Form: Remind Password</title>
+    <test-cases>
+        <test-case start='1594912409368' status='passed' stop='1594912409396'>
+            <name>link text is correct</name>
+            <title>link text is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594912409369' status='passed' stop='1594912409378'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='beff18a9-09a4-41b1-9f84-47a425e1baf6-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='32299524-a847-49da-9a5d-c89bbec1a22f-attachment.json' type='application/json' size='143'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594912409380' status='passed' stop='1594912409395'>
+                    <name>GET /session/:sessionId/element/0.7147822311994734-8/text</name>
+                    <title>GET /session/:sessionId/element/0.7147822311994734-8/text</title>
+                    <attachments>
+                        <attachment title='Response' source='699e0f57-c1e4-474f-b581-ef07f202d255-attachment.json' type='application/json' size='10'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594912409396' status='passed' stop='1594912409415'>
+            <name>url is correct</name>
+            <title>url is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594912409396' status='passed' stop='1594912409405'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='f201c6a8-737e-4ee3-b44f-d7f9b71ee247-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='7be8c7a9-d06d-411c-bc89-78456cfa490e-attachment.json' type='application/json' size='143'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594912409407' status='passed' stop='1594912409414'>
+                    <name>GET /session/:sessionId/element/0.7147822311994734-8/attribute/href</name>
+                    <title>GET /session/:sessionId/element/0.7147822311994734-8/attribute/href</title>
+                    <attachments>
+                        <attachment title='Response' source='19cab24e-2583-4c09-aabd-1ec5da929b32-attachment.json' type='application/json' size='577'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

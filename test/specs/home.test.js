@@ -98,6 +98,34 @@ describe('Home Page', () => {
             it('has correct title', () => {
                 homePage.passwordLabelIsDisplayed();
             })
+            it('password input symbols', () => {
+                homePage.inputSymbolsPsw();
+            });
+
+            it('password erase symbols', () => {
+                homePage.eraseSymbolsPsw();
+            });
+
+            it('99 symbols psw input field', () => {
+                homePage.input99SymbolsPsw();
+            });
+
+            it('100 symbols psw input field', () => {
+                homePage.input100SymbolsPsw();
+            });
+
+            it('101 symbols psw input field', () => {
+                homePage.input101SymbolsPsw();
+            });
+
+            it('throws an error msg on empty submitting', () => {
+                homePage.submitEmptyPsw();
+            });
+
+            it('password is obscured', () => {
+                homePage.obscuredPsw();
+            });
+
         })
 
         describe('Remind User Name', () => {

@@ -16,5 +16,7 @@ export default {
     pLabel: 'Password required',
     forgotText: 'Forgot User Name or Password ?',
     loginBtnTitle: 'Log In',
-    userNameIsRequired: 'The Username field is required.'
+    userNameIsRequired: 'The Username field is required.',
+    pswIsRequired: 'The Password field is required.',
+    type: 'password',
 }

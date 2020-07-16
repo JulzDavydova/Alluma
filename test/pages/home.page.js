@@ -111,16 +111,6 @@ class HomePage extends BasePage {
         assert.equal(username.getValue(), 'Juli');
     }
 
-    generateStringWithLength(length) {
-        let result = '';
-        for (let i = 0; i < length; i++) result += '1';
-        return result;
-    }
-
-    sendNumberOfKeys(length) {
-        for (let i = 0; i < length; i++) browser.keys('1');
-    }
-
     input99Symbols() {
         const username = $(selector.userNameInput);
         username.setValue('');
@@ -152,6 +142,56 @@ class HomePage extends BasePage {
         errorMessage.waitForDisplayed({ timeout: 10000 });
         assert.equal(errorMessage.getText(), expected.userNameIsRequired);
     }
+
+    inputSymbolsPsw() {
+        const psw = $(selector.passwordInput);
+        psw.setValue('Panda666$');
+        assert.equal(psw.getValue(), 'Panda666$');
+    }
+
+    eraseSymbolsPsw() {
+        const psw = $(selector.passwordInput);
+        psw.setValue('Panda666$');
+        browser.keys('Backspace');
+        assert.equal(psw.getValue(), 'Panda666');
+    }
+    input99SymbolsPsw() {
+        const password = $(selector.passwordInput);
+        password.setValue('');
+        this.sendNumberOfKeys(99);
+        let string99 = this.generateStringWithLength(99);
+        assert.equal(password.getValue(), string99);
+    }
+
+    input100SymbolsPsw() {
+        const password = $(selector.passwordInput);
+        password.setValue('');
+        this.sendNumberOfKeys(100);
+        let string100 = this.generateStringWithLength(100);
+        assert.equal(password.getValue(), string100);
+    }
+
+    input101SymbolsPsw() {
+        const password = $(selector.passwordInput);
+        password.setValue('');
+        this.sendNumberOfKeys(101);
+        let string100 = this.generateStringWithLength(100);
+        assert.equal(password.getValue(), string100);
+    }
+
+    submitEmptyPsw() {
+        $(selector.passwordInput).setValue('');
+        $(selector.loginBtn).click();
+        const errorMsg = $$(selector.errorMessages)[1];
+        errorMsg.waitForDisplayed({ timeout: 10000 });
+        assert.equal(errorMsg.getText(), expected.pswIsRequired);
+    }
+
+    obscuredPsw(){
+        const osc = $(selector.passwordInput);
+        assert.equal (osc.getAttribute('type'),expected.type);
+    }
+
 }
 
 
