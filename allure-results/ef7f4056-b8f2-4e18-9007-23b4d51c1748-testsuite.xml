@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594874948494' stop='1594874951119'>
+    <name>Header: Header</name>
+    <title>Header: Header</title>
+    <test-cases>
+        <test-case start='1594874948496' status='passed' stop='1594874951118'>
+            <name>header title is correct</name>
+            <title>header title is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594874948499' status='passed' stop='1594874951049'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d07b8a21-131a-429c-ad61-73cb2d80a1bb-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594874951080' status='passed' stop='1594874951110'>
+                    <name>GET /session/:sessionId/element/0.6456058540815479-1/text</name>
+                    <title>GET /session/:sessionId/element/0.6456058540815479-1/text</title>
+                    <attachments>
+                        <attachment title='Response' source='aea31f11-7247-456a-a6f8-86156acb521f-attachment.json' type='application/json' size='13'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='d6d543e4-12a4-48fd-9735-4e960e8a071c-attachment.json' type='application/json' size='39'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

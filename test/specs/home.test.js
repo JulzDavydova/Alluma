@@ -44,7 +44,6 @@ describe('Home Page', () => {
 
         describe('Screener', () => {
             it('link text is correct',() =>{
-                // homePage.openHomePage();
                 homePage.screenerLinkIsCorrect();
             });
 
@@ -60,8 +59,35 @@ describe('Home Page', () => {
             });
 
             it('has correct title', () => {
-                homePage.userNameLabelIsDisplayed()
-            })
+                homePage.userNameLabelIsDisplayed();
+            });
+
+            it('input symbols', () => {
+                homePage.inputSymbolsUserName();
+            });
+
+            it('erase symbols', () => {
+                homePage.eraseSymbolsUserName();
+            });
+
+            it('99 symbols', () => {
+                homePage.input99Symbols();
+            });
+
+            it('100 symbols', () => {
+                homePage.input100Symbols();
+            });
+
+            it('101 symbols', () => {
+                homePage.input101Symbols();
+            });
+
+            it('throws an error on empty submitting', () => {
+                homePage.submitEmptyUsername();
+            });
+
+
+
         })
 
         describe('Password Input Field', () => {
@@ -76,29 +102,34 @@ describe('Home Page', () => {
 
         describe('Remind User Name', () => {
             it('link text is correct',() => {
-                // homePage.openHomePage();
                 homePage.userNameLinkIsCorrect();
             });
 
-            it('url is correct',() =>{
-                // homePage.openHomePage();
+            it('url is correct',() => {
                 homePage.userNameUrlIsCorrect();
             });
         });
 
         describe('Remind Password', () => {
-            it('link text is correct',() =>{
-                // homePage.openHomePage();
+            it('link text is correct',() => {
                 homePage.passwordLinkIsCorrect();
             });
 
-            it('url is correct',() =>{
-                // homePage.openHomePage();
+            it('url is correct',() => {
                 homePage.passwordUrlIsCorrect();
             });
         });
+        describe('Login', () => {
+            it('login button is displayed',() => {
+                homePage.loginBtnIsDisplayed();
+            });
 
-        it('text block is displayed',() =>{
+            it('login button title is correct',() => {
+                homePage.loginBtnTitleIsCorrect()
+            });
+        });
+
+        it('text block is displayed',() => {
             homePage.textBlockIsDisplayed();
         });
 

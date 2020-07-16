@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594874295122' stop='1594874295164'>
+    <name>Home Page: Login Form: Log In</name>
+    <title>Home Page: Login Form: Log In</title>
+    <test-cases>
+        <test-case start='1594874295122' status='passed' stop='1594874295164'>
+            <name>login button is displayed</name>
+            <title>login button is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594874295123' status='passed' stop='1594874295139'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0032a103-6996-4a80-8a86-4b09542f5a5f-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='4a4a1425-0f09-4159-ace2-13b8aa1c0c27-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594874295142' status='passed' stop='1594874295162'>
+                    <name>GET /session/:sessionId/element/0.2222692710816414-17/displayed</name>
+                    <title>GET /session/:sessionId/element/0.2222692710816414-17/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='6aca3b6e-7b7a-47ec-a39b-7ef5742c5ee7-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
