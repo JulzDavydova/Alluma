@@ -1,0 +1,128 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594929735478' stop='1594929735607'>
+    <name>Forgot Username: Link forgot password</name>
+    <title>Forgot Username: Link forgot password</title>
+    <test-cases>
+        <test-case start='1594929735478' status='passed' stop='1594929735505'>
+            <name>is displayed</name>
+            <title>is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594929735478' status='passed' stop='1594929735491'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='87690b5f-bb99-45d0-b38e-24be3991f0f4-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='b6c21d47-6f54-4077-96cc-114d3990f276-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594929735492' status='passed' stop='1594929735505'>
+                    <name>GET /session/:sessionId/element/0.18405457581304163-4/displayed</name>
+                    <title>GET /session/:sessionId/element/0.18405457581304163-4/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='bb177099-8302-449a-be92-e1821f74bd35-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594929735506' status='passed' stop='1594929735536'>
+            <name>is correct</name>
+            <title>is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594929735506' status='passed' stop='1594929735515'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='41ac59b9-fb5a-4809-b2b8-7f8ca6c10c97-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='7bc01615-3aac-4c6c-bca4-dc04c6fc239e-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594929735517' status='passed' stop='1594929735534'>
+                    <name>GET /session/:sessionId/element/0.18405457581304163-4/text</name>
+                    <title>GET /session/:sessionId/element/0.18405457581304163-4/text</title>
+                    <attachments>
+                        <attachment title='Response' source='f8aaa7d0-f3c0-4906-8557-a115c90fab24-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594929735536' status='broken' stop='1594929735553'>
+            <name>is clickable</name>
+            <title>is clickable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>_forgotUserName.default.isClickable is not a function</message>
+                <stack-trace>TypeError: _forgotUserName.default.isClickable is not a function
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-user-name.test.js:98:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594929735555' status='failed' stop='1594929735606'>
+            <name>url is correct</name>
+            <title>url is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594929735556' status='passed' stop='1594929735568'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='13f952b0-9a5a-48ea-b62a-b0e9de738223-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='8e368f33-52ef-438a-bf52-b611b071646f-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594929735570' status='passed' stop='1594929735587'>
+                    <name>GET /session/:sessionId/element/0.18405457581304163-4/attribute/href</name>
+                    <title>GET /session/:sessionId/element/0.18405457581304163-4/attribute/href</title>
+                    <attachments>
+                        <attachment title='Response' source='c36d6d6b-8129-4362-a2f9-c623a2b3a9d1-attachment.json' type='application/json' size='577'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected 'https://cx-sb01-auth01.azurewebsites.net/Account/ForgotPassword?origin=https%3A%2F%2Fcx-sb01-auth01.azurewebsites.net%2FAccount%2FLogin%3FReturnUrl%3D%252Fconnect%252Fauthorize%252Fcallback%253Fclient_id%253Dggspa_cxsb01%2526scope%253Dopenid%252520intakeservice%2526response_type%253Did_token%252520token%2526response_mode%253Dform_post%2526redirect_uri%253Dhttps%25253A%25252F%25252Fcx-sb01-auth01.azurewebsites.net%25252FAccount%25252FClientRedirect%2526state%253Dhttp%25253A%25252F%25252Foxcdemo.alluma.org%2526nonce%253Da6e621e2-589a-46f9-8f07-eca0008b8115&amp;clientid=ggspa' to equal '/Account/ForgotPassword?origin='</message>
+                <stack-trace>AssertionError: expected 'https://cx-sb01-auth01.azurewebsites.net/Account/ForgotPassword?origin=https%3A%2F%2Fcx-sb01-auth01.azurewebsites.net%2FAccount%2FLogin%3FReturnUrl%3D%252Fconnect%252Fauthorize%252Fcallback%253Fclient_id%253Dggspa_cxsb01%2526scope%253Dopenid%252520intakeservice%2526response_type%253Did_token%252520token%2526response_mode%253Dform_post%2526redirect_uri%253Dhttps%25253A%25252F%25252Fcx-sb01-auth01.azurewebsites.net%25252FAccount%25252FClientRedirect%2526state%253Dhttp%25253A%25252F%25252Foxcdemo.alluma.org%2526nonce%253Da6e621e2-589a-46f9-8f07-eca0008b8115&amp;clientid=ggspa' to equal '/Account/ForgotPassword?origin='
+                    at ForgotUsernamePage.passwordUrlIsCorrect (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-user-name.page.js:116:16)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-user-name.test.js:102:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

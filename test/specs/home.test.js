@@ -6,30 +6,25 @@ describe('Home Page', () => {
         homePage.homePageGreeting();
     });
 
-    it ('tab title is displayed', () => {
-        // homePage.openHomePage();
+    it('tab title is displayed', () => {
         homePage.tabTitleIsDisplayed();
     });
 
     describe('Login Form', () => {
 
         it('is displayed', () => {
-            // homePage.openHomePage();
             homePage.loginFormIsDisplayed();
         });
 
-        it('has correct title', () =>{
-            // homePage.openHomePage();
+        it('has correct title', () => {
             homePage.formTitleIsCorrect();
         });
 
-        it('greeting has correct title',() =>{
-            // homePage.openHomePage();
+        it('greeting has correct title',() => {
             homePage.homePageGreeting();
         });
 
-        it('title3 is displayed',() =>{
-            // homePage.openHomePage();
+        it('title3 is displayed',() => {
             homePage.text1IsDisplayed();
         });
 

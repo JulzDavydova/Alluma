@@ -10,6 +10,6 @@ export default {
     passwordInput: '#Password',
     forgotText: 'label.gg-links-text',
     loginBtn: '.gg-btn',
-    errorMessages: 'div.gg-error.validation-summary-errors > ul > li'
+    errorMessages: 'div.gg-error.validation-summary-errors > ul > li',
     
 }

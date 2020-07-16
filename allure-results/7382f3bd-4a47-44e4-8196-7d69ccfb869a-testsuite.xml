@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594927409778' stop='1594927410080'>
+    <name>Forgot Username: Link forgot password</name>
+    <title>Forgot Username: Link forgot password</title>
+    <test-cases>
+        <test-case start='1594927409778' status='passed' stop='1594927409805'>
+            <name>is displayed</name>
+            <title>is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594927409778' status='passed' stop='1594927409791'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a55d143f-5f31-490b-8c6e-90fbdace0237-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='c1fa2b84-c400-4d26-9a51-56855b691735-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594927409792' status='passed' stop='1594927409804'>
+                    <name>GET /session/:sessionId/element/0.2005079361295543-4/displayed</name>
+                    <title>GET /session/:sessionId/element/0.2005079361295543-4/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='645297a3-7fa6-4b35-a39c-ae038eb9d7ea-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594927409806' status='failed' stop='1594927409831'>
+            <name>is correct</name>
+            <title>is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594927409806' status='passed' stop='1594927409815'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='bc9adf8e-1a7d-4a07-8c2d-18deb9a308c9-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='e4b91279-133f-47b2-ba9f-e221dc6edfee-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594927409816' status='passed' stop='1594927409830'>
+                    <name>GET /session/:sessionId/element/0.2005079361295543-4/text</name>
+                    <title>GET /session/:sessionId/element/0.2005079361295543-4/text</title>
+                    <attachments>
+                        <attachment title='Response' source='39889391-5831-4c13-84fe-ef65d9095348-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected 'I forgot my Password' to equal 'I forgot my password'</message>
+                <stack-trace>AssertionError: expected 'I forgot my Password' to equal 'I forgot my password'
+                    at ForgotUsernamePage.forgotPasswordLinkIsCorrect (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-user-name.page.js:106:16)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-user-name.test.js:94:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594927409831' status='passed' stop='1594927410028'>
+            <name>is clickable</name>
+            <title>is clickable</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594927409832' status='passed' stop='1594927409840'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='8b37c2c2-0aca-466d-a59a-8e0ba5a6e65e-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='244d6805-d6ef-4acf-9bfa-fe0616c017d4-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594927409845' status='passed' stop='1594927410025'>
+                    <name>POST /session/:sessionId/element/0.2005079361295543-4/click</name>
+                    <title>POST /session/:sessionId/element/0.2005079361295543-4/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594927410031' status='failed' stop='1594927410079'>
+            <name>url is correct</name>
+            <title>url is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594927410032' status='passed' stop='1594927410054'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6abac92a-ec2f-4805-b0ed-ae5a02863b06-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='86436b12-6242-4346-aecc-8bd45e95d502-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1594927410056' status='passed' stop='1594927410074'>
+                    <name>GET /session/:sessionId/element/0.7923703854145732-1/attribute/href</name>
+                    <title>GET /session/:sessionId/element/0.7923703854145732-1/attribute/href</title>
+                    <attachments>
+                        <attachment title='Response' source='a6c81e3d-7c25-41d5-b9dc-a606c94790e9-attachment.json' type='application/json' size='577'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected false to be true</message>
+                <stack-trace>AssertionError: expected false to be true
+                    at ForgotUsernamePage.passwordUrlIsCorrect (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-user-name.page.js:116:16)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-user-name.test.js:102:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

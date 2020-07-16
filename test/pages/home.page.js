@@ -42,6 +42,10 @@ class HomePage extends BasePage {
         const link = $$(selector.links)[1];
         assert.equal(link.getText(), expected.userNameLink);
     }
+    clickForgotUsenameLink() {
+        const link = $$(selector.links)[1];
+        link.click();
+    }
 
     passwordLinkIsCorrect() {
         const link = $$(selector.links)[2];
@@ -76,6 +80,7 @@ class HomePage extends BasePage {
     userNameInputFieldDisplayed() {
         $(selector.userNameInput).isDisplayed();
     }  
+    
     userNameLabelIsDisplayed() {
         const label = $$(selector.labelFor)[0];
         label.isDisplayed();

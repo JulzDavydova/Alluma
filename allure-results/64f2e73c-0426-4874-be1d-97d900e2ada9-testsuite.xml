@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594918856759' stop='1594918856793'>
+    <name>Forgot Username: Recover Username Form: Remind Password</name>
+    <title>Forgot Username: Recover Username Form: Remind Password</title>
+    <test-cases>
+        <test-case start='1594918856759' status='broken' stop='1594918856775'>
+            <name>link text is correct</name>
+            <title>link text is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594918856760' status='passed' stop='1594918856772'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='30d88de2-b512-4a0b-8939-935d6f93afe0-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='3d42846f-4a2d-4e36-a67e-9006127114a9-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'getText' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'getText' of undefined
+                    at ForgotUsernamePage.passwordLinkIsCorrect (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-user-name.page.js:50:27)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-user-name.test.js:143:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594918856775' status='broken' stop='1594918856793'>
+            <name>url is correct</name>
+            <title>url is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594918856776' status='passed' stop='1594918856791'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='edb6099b-bebc-4330-aca2-fe534c3b9449-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='5d1aa355-ee3c-4cd8-8c7f-20f98460f8aa-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'getAttribute' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'getAttribute' of undefined
+                    at ForgotUsernamePage.passwordUrlIsCorrect (/Users/julia/Alluma/TEST/Alluma/test/pages/forgot-user-name.page.js:64:28)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/forgot-user-name.test.js:147:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
