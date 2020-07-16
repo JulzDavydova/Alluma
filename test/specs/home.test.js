@@ -69,6 +69,14 @@ describe('Home Page', () => {
             // homePage.openHomePage();
             homePage.passwordUrlIsCorrect();
         });
+
+        it('text block is displayed',() =>{
+            homePage.textBlockIsDisplayed();
+        });
+
+        it('last text block is displayed',() =>{
+            homePage.lastTextBlockIsDisplayed();
+        });
     });
 });
 

@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594863083732' stop='1594863087080'>
+    <name>Home Page: Home Page</name>
+    <title>Home Page: Home Page</title>
+    <test-cases>
+        <test-case start='1594863083733' status='broken' stop='1594863083852'>
+            <name>should be opened</name>
+            <title>should be opened</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594863083735' status='passed' stop='1594863083817'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='80654474-0f99-478e-b66c-9656f4395b4d-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Response' source='302047a6-e1fe-4a7d-abbd-e095b62f2bd2-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'getText' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'getText' of undefined
+                    at HomePage.homePageGreeting (/Users/julia/Alluma/TEST/Alluma/test/pages/home.page.js:10:28)
+                    at Context.&lt;anonymous> (/Users/julia/Alluma/TEST/Alluma/test/specs/home.test.js:8:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1594863083852' status='passed' stop='1594863086542'>
+            <name>tab title is displayed</name>
+            <title>tab title is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-84.0.4147.89'/>
+            </parameters>
+            <steps>
+                <step start='1594863083853' status='passed' stop='1594863086531'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='2f3b9e49-0848-462c-80af-5fe726c5cbe3-attachment.json' type='application/json' size='13'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

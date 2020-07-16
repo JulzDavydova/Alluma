@@ -48,15 +48,27 @@ class HomePage extends BasePage {
         const link = $$(selector.links)[0];
         assert.equal(link.getAttribute('href'), expected.screenerUrl);
     }
+
     userNameUrlIsCorrect() {
         const link = $$(selector.links)[1];
         assert.isTrue(link.getAttribute('href').startsWith(expected.userNameUrl));
     }
+
     passwordUrlIsCorrect() {
         const link = $$(selector.links)[2];
         assert.isTrue(link.getAttribute('href').startsWith(expected.passwordUrl));
     }
-       
+
+    textBlockIsDisplayed() {
+        const title = $$(selector.text)[0];
+        assert.equal(title.getText(), expected.text);
+
+    }  
+
+    lastTextBlockIsDisplayed() {
+        const title = $$(selector.text)[1];
+        assert.equal(title.getText(), expected.lastText);
+    }    
 }
 
 

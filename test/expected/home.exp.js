@@ -10,4 +10,6 @@ export default {
     screenerUrl: 'http://oxcdemo.alluma.org/#/quick/intro',
     userNameUrl: 'https://cx-sb01-auth01.azurewebsites.net/Account/ForgotUsername?origin=',
     passwordUrl: 'https://cx-sb01-auth01.azurewebsites.net/Account/ForgotPassword?origin=',
+    text: 'If you need a user name, contact your system administrator.',
+    lastText: 'Interested in becoming a Connections user? Learn More',
 }
