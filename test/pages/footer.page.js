@@ -58,9 +58,19 @@ class FooterPage extends BasePage {
         title.isDisplayed();
     }
 
+    iconFbUrl() {
+        const fbIcon = $$(selector.icons)[0];
+        assert.equal(fbIcon.getAttribute('href'), expected.urlFB);
+    }
+
     iconTw() {
         const title = $(selector.twIcon);
         title.isDisplayed();
+    }
+
+    iconTwUrl() {
+        const icon = $$(selector.icons)[1];
+        assert.equal(icon.getAttribute('href'), expected.urlTwitter);
     }
 
     iconIn() {
@@ -68,9 +78,19 @@ class FooterPage extends BasePage {
         title.isDisplayed();
     }
 
+    iconInUrl() {
+        const icon = $$(selector.icons)[2];
+        assert.equal(icon.getAttribute('href'), expected.urlIN);
+    }
+
     logo() {
         const title = $(selector.logo);
         title.isDisplayed();
+    }
+
+    logoUrl() {
+        const logo = $$(selector.links)[1];
+        assert.equal(logo.getAttribute('href'), expected.urlAlluma);
     }
 
     text1() {
@@ -83,6 +103,11 @@ class FooterPage extends BasePage {
         const title = $$(selector.email)[1];
         title.isDisplayed();
         assert.equal(title.getText(), expected.textAlluma);
+    }
+
+    linkAllumaUrl() {
+        const logo = $$(selector.links)[3];
+        assert.equal(logo.getAttribute('href'), expected.urlAlluma);
     }
 
     text2() {

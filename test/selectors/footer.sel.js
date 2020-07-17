@@ -12,5 +12,7 @@ export default {
     text1: 'div.gg-footer-cc-text > span',
     texts: 'span.gg-footer-link-a',
     logo: '.gg-footer-cc-img',
+    icons: '.gg-footer-icons.gg-footer-link-a',
+    links: 'a.gg-footer-link.gg-footer-link-a'
     
 }

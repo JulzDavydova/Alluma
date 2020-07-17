@@ -15,4 +15,5 @@ export default {
     urlFB: 'https://www.facebook.com/WeAreAlluma/?ref=page_internal',
     urlTwitter: 'https://twitter.com/WeAreAlluma',
     urlIN: 'https://www.linkedin.com/company/we-are-alluma/',
+    urlAlluma: 'https://www.alluma.org/',
 }

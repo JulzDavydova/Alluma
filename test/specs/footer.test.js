@@ -38,16 +38,32 @@ describe('Footer Page', () => {
         footerPage.iconFb();   
     });
 
+    it('fb icon has a correct url', () => {
+        footerPage.iconFbUrl();   
+    });
+
     it('twitter icon is displayed', () => {
         footerPage.iconFb();   
+    });
+
+    it('twitter icon has a correct url', () => {
+        footerPage.iconTwUrl();   
     });
 
     it('linkedin icon is displayed', () => {
         footerPage.iconIn();   
     });
 
+    it('linkedin icon has a correct url', () => {
+        footerPage.iconInUrl();   
+    });
+
     it('logo is displayed', () => {
         footerPage.logo();   
+    });
+
+    it('logo has a correct url', () => {
+        footerPage.logoUrl();   
     });
 
     it('text1 is displayed and is correct', () => {
@@ -56,6 +72,10 @@ describe('Footer Page', () => {
 
     it('link is displayed and is correct', () => {
         footerPage.linkAlluma();   
+    });
+
+    it('link has a correct url', () => {
+        footerPage.linkAllumaUrl();   
     });
 
     it('text2 is displayed and is correct', () => {
