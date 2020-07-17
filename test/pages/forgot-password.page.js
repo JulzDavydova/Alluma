@@ -57,6 +57,11 @@ class ForgotPasswordPage extends BasePage {
         $(selector.usernameInput).isDisplayed();
     } 
 
+    usernameInputFieldHasAUserIcon() {
+        const userIcon = $(selector.userIcon);
+        assert.equal(userIcon.getAttribute('d'), expected.userIcon);
+    }
+
     inputSymbolsUsername() {
         const username = $(selector.usernameInput);
         username.setValue('Allum');
@@ -104,9 +109,16 @@ class ForgotPasswordPage extends BasePage {
     cancelBtnIsDisplayed() {
         $$(selector.btns)[0].isDisplayed();
     }
+    
     cancelBtnTitleIsCorrect() {
         const title = $$(selector.btns)[0];
         assert.equal(title.getText(), expected.btnCancel);
+    }
+
+    cancelBtnRedirectsToHomePage() {
+        $$(selector.btns)[0].click();
+        this.onHomePage();
+        this.goToRecoverPasswordPage();
     }
 
     continueBtnIsDisplayed() {
@@ -116,9 +128,61 @@ class ForgotPasswordPage extends BasePage {
     continueBtnTitleIsCorrect() {
         const title = $$(selector.btns)[1];
         assert.equal(title.getText(), expected.btnContinue);
-    }  
+    }
 
-    
+    continueBtnValidSubmit() {
+        $(selector.usernameInput).setValue('Julia');
+        $$(selector.btns)[1].click();
+        const emailSentTitle = $(selector.emailSentTitle);
+        emailSentTitle.waitForDisplayed({ timeout: 10000 });
+        assert.equal(emailSentTitle.getText(), expected.emailSentTitle);
+    }
+
+    hasAnEmailSentTitle() {
+        assert.equal($(selector.emailSentTitle).getText(), expected.emailSentTitle);
+    }
+
+    hasSuccessMessage() {
+        const successMessage = $(selector.successMessage);
+        successMessage.isDisplayed();
+        assert.equal(successMessage.getText(), expected.successMessage);
+    }
+
+    resendEmailBlockHasTitle() {
+        const title = $$(selector.resendEmailTitle)[1];
+        title.isDisplayed();
+        assert.equal(title.getText(), expected.resendEmailTitle);
+    }
+
+    resendEmailBlockHasMessage() {
+        const message = $(selector.resendEmailMessage);
+        message.isDisplayed();
+        assert.equal(message.getText(), expected.resendEmailMessage);
+    }
+
+    resendEmailButtonHasTitle() {
+        const button = $(selector.resendEmailButton);
+        button.isDisplayed();
+        assert.equal(button.getText(), expected.resendEmailButton);
+    }
+
+    resendEmailButtonSubmit() {
+        $(selector.resendEmailButton).click();
+        const emailSentTitle = $(selector.emailSentTitle);
+        emailSentTitle.waitForDisplayed({ timeout: 10000 });
+        assert.equal(emailSentTitle.getText(), expected.emailSentTitle);
+    }
+
+    backToLoginButtonTitle() {
+        const button = $(selector.backToLoginButton);
+        button.isDisplayed();
+        assert.equal(button.getText(), expected.backToLoginButton);
+    }
+
+    backToLoginButtonSubmit() {
+        $(selector.backToLoginButton).click();
+        this.onHomePage();
+    }
 
 }
 

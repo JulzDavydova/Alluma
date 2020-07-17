@@ -6,6 +6,12 @@ class BasePage {
 
     openHomePage() {
         browser.url('/');
+        this.onHomePage();
+    }
+
+    onHomePage() {
+        const loginButton = $('button.gg-btn[value="login"]');
+        loginButton.waitForDisplayed({ timeout: 10000 });
     }
     
     formTitleIsCorrect() {

@@ -57,6 +57,10 @@ describe('Forgot Password', () => {
             forgotPasswordPage.usernameInputFieldDisplayed();
         });
 
+        it('username input field has a user icon',() => {
+            forgotPasswordPage.usernameInputFieldHasAUserIcon();
+        });
+
         it('username input symbols',() => {
             forgotPasswordPage.inputSymbolsUsername();
         });
@@ -85,21 +89,72 @@ describe('Forgot Password', () => {
 
     describe('Buttons', () => {
 
-        it('cancel is displayed',() => {
-             forgotPasswordPage.cancelBtnIsDisplayed();
-         });  
+        describe('Cancel', () => {
+            it('is displayed',() => {
+                forgotPasswordPage.cancelBtnIsDisplayed();
+            });  
 
-        it('cancel has correct title',() => {
-            forgotPasswordPage.cancelBtnTitleIsCorrect();
-        }); 
+            it('has correct title',() => {
+                forgotPasswordPage.cancelBtnTitleIsCorrect();
+            }); 
 
-        it('continue is displayed',() => {
-            forgotPasswordPage.continueBtnIsDisplayed();
-        });  
+            it('redirects to home page',() => {
+                forgotPasswordPage.cancelBtnRedirectsToHomePage();
+            }); 
+        });
 
-        it('continue has correct title',() => {
-            forgotPasswordPage.continueBtnTitleIsCorrect();
-         });  
+        describe('Continue', () => {
+            it('is displayed',() => {
+                forgotPasswordPage.continueBtnIsDisplayed();
+            });  
 
+            it('has correct title',() => {
+                forgotPasswordPage.continueBtnTitleIsCorrect();
+            });  
+
+            it('shows success message on valid submit',() => {
+                forgotPasswordPage.continueBtnValidSubmit();
+            });
+        });
+    });
+
+    describe('Email sent block', () => {
+        it('has a correct title', () => {
+            forgotPasswordPage.hasAnEmailSentTitle();
+        });
+
+        it('has a correct success message', () => {
+            forgotPasswordPage.hasSuccessMessage();
+        });
+
+        describe('Resend The Email block', () => {
+            it('has a correct title', () => {
+                forgotPasswordPage.resendEmailBlockHasTitle();
+            });
+    
+            it('has a correct resend the email message', () => {
+                forgotPasswordPage.resendEmailBlockHasMessage();
+            });
+
+            describe('Resend the email button', () => {
+                it('has a correct title', () => {
+                    forgotPasswordPage.resendEmailButtonHasTitle();
+                });
+        
+                it('shows a success message on submit', () => {
+                    forgotPasswordPage.resendEmailButtonSubmit();
+                });
+            });
+
+            describe('Back to Login button', () => {
+                it('has a correct title', () => {
+                    forgotPasswordPage.backToLoginButtonTitle();
+                });
+        
+                it('redirects to home page', () => {
+                    forgotPasswordPage.backToLoginButtonSubmit();
+                });
+            });
+        });
     });
 });
