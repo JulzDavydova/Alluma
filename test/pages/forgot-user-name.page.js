@@ -36,6 +36,11 @@ class ForgotUsernamePage extends BasePage {
         $(selector.emailInput).isDisplayed();
     } 
 
+    emailInputHasAnUserIcon() {
+        const userIcon = $(selector.emailInputIcon);
+        assert.equal(userIcon.getAttribute('d'), expected.emailInputIcon);
+    }
+
     inputSymbolsEmail() {
         const email = $(selector.emailInput);
         email.setValue('456Password');
@@ -80,12 +85,29 @@ class ForgotUsernamePage extends BasePage {
         assert.equal(errorMessage.getText(), expected.errorMsg);
     }
 
+    noSubmitWithNoAt () {
+        $(selector.emailInput).setValue('JuliaNoAt');
+        $$(selector.buttons)[1].click();
+        $(selector.recoverTitle).waitForDisplayed({ timeout: 100 });
+    }
+
+    noSubmitWithNoCharsAfterAt() {
+        $(selector.emailInput).setValue('JuliaNoCharsAfter@');
+        $$(selector.buttons)[1].click();
+        $(selector.recoverTitle).waitForDisplayed({ timeout: 100 });
+    }
+
     backLoginBtnIsDisplayed() {
         $$(selector.buttons)[0].isDisplayed();
     }
     backLoginBtnTitleIsCorrect() {
         const title = $$(selector.buttons)[0];
         assert.equal(title.getText(), expected.btnBackTitle);
+    }
+
+    backLoginBtnRedirectsToHomePage() {
+        $$(selector.buttons)[0].click();
+        homePage.loginFormIsDisplayed();
     }
 
     recoverBtnIsDisplayed() {
@@ -95,7 +117,15 @@ class ForgotUsernamePage extends BasePage {
     recoverBtnTitleIsCorrect() {
         const title = $$(selector.buttons)[1];
         assert.equal(title.getText(), expected.btnRecoverTitle);
-    }  
+    }
+
+    recoverBtnSubmitSuccess() {
+        $(selector.emailInput).setValue('julia@good.email');
+        $$(selector.buttons)[1].click();
+        const successMessage = $(selector.successMessage);
+        successMessage.waitForDisplayed({ timeout: 10000 });
+        assert.equal(successMessage.getText(), expected.successMessage);
+    }
 
     forgotPasswordIsDisplayed() {
         $(selector.link).isDisplayed();

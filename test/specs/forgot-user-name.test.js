@@ -23,9 +23,7 @@ describe('Forgot Username', () => {
 
         it('has correct text block',() => {
             forgotUserNamePage.textBlockIsDisplayedCorrectly();
-        });
-
-    });    
+        });  
 
         describe('Email Input Field', () => {
 
@@ -35,6 +33,10 @@ describe('Forgot Username', () => {
     
             it('email input field is displayed',() => {
                 forgotUserNamePage.emailInputFieldDisplayed();
+            });
+    
+            it('email input has an user icon',() => {
+                forgotUserNamePage.emailInputHasAnUserIcon();
             });
 
             it('email input symbols',() => {
@@ -61,26 +63,50 @@ describe('Forgot Username', () => {
                 forgotUserNamePage.submitEmptyEmail();
             });
 
+            it('cannot submit email with no @',() => {
+                forgotUserNamePage.noSubmitWithNoAt();
+            });
+
+            it('cannot submit email with no characters after @',() => {
+                forgotUserNamePage.noSubmitWithNoCharsAfterAt();
+            });
+
         });    
              
                  
         describe('Buttons', () => {
 
-            it('back to login is displayed',() => {
-                forgotUserNamePage.backLoginBtnIsDisplayed();
-            });  
+            describe('Back to Login', () => {
+                it('is displayed',() => {
+                    forgotUserNamePage.backLoginBtnIsDisplayed();
+                });  
 
-            it('back to login has correct title',() => {
-                forgotUserNamePage.backLoginBtnTitleIsCorrect();
+                it('has correct title',() => {
+                    forgotUserNamePage.backLoginBtnTitleIsCorrect();
+                }); 
+
+                it('redirects to home page',() => {
+                    forgotUserNamePage.backLoginBtnRedirectsToHomePage();
+                    forgotUserNamePage.openHomePage();
+                    forgotUserNamePage.goToRecoverUsernamePage();
+                });
             }); 
 
-            it('recover username is displayed',() => {
-                forgotUserNamePage.recoverBtnIsDisplayed();
-            });  
+            describe('Recover Username', () => {
+                it('recover username is displayed',() => {
+                    forgotUserNamePage.recoverBtnIsDisplayed();
+                });  
 
-            it('recover username has correct title',() => {
-                forgotUserNamePage.recoverBtnTitleIsCorrect();
-            });  
+                it('recover username has correct title',() => {
+                    forgotUserNamePage.recoverBtnTitleIsCorrect();
+                });  
+
+                it('shows success message after successful submit',() => {
+                    forgotUserNamePage.recoverBtnSubmitSuccess();
+                    forgotUserNamePage.openHomePage();
+                    forgotUserNamePage.goToRecoverUsernamePage();
+                });  
+            }); 
 
         });    
 
@@ -103,5 +129,6 @@ describe('Forgot Username', () => {
             });
 
         });    
+    });  
                    
 });
