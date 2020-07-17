@@ -7,10 +7,10 @@ export default {
     fax: '.gg-footer-link.gg-footer-link5',
     block3: '.gg-footer-hdr3',
     fbIcon: '.gg-link-icon1',
-    text1: '',
-    text2: '',
-    text3: '',
-    text4: '',
-    alluma: 'a.gg-footer-link.gg-footer-link4.gg-footer-link-a',
+    twIcon: '.gg-link-icon2',
+    inIcon: '.gg-link-icon3',
+    text1: 'div.gg-footer-cc-text > span',
+    texts: 'span.gg-footer-link-a',
+    logo: '.gg-footer-cc-img',
     
 }

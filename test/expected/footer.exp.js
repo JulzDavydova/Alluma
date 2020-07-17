@@ -7,8 +7,12 @@ export default {
     email: 'support@email.com',
     fax: 'Fax:777-777-7777',
     thirdBlockTitle: 'Stay in touch',
-    text1: 'Copyright 2019 Alluma',
+    text1: 'Copyright 2019',
+    textAlluma: 'Alluma',
     text2: 'Privacy Policy',
     text3: 'Non-discrimination Policy',
     text4: 'Terms of Use',
+    urlFB: 'https://www.facebook.com/WeAreAlluma/?ref=page_internal',
+    urlTwitter: 'https://twitter.com/WeAreAlluma',
+    urlIN: 'https://www.linkedin.com/company/we-are-alluma/',
 }
