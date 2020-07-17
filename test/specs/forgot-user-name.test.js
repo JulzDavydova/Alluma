@@ -10,6 +10,9 @@ describe('Forgot Username', () => {
         forgotUserNamePage.tabTitleIsDisplayed();
     });
 
+    it ('has a background image', () => {
+        forgotUserNamePage.backgroundImage();
+    });
 
     describe('Recover Username Form', () => {
 

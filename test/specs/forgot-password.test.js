@@ -11,6 +11,10 @@ describe('Forgot Password', () => {
         forgotPasswordPage.tabTitleIsDisplayed();
     });
 
+    it ('has a background image', () => {
+        forgotPasswordPage.backgroundImage();
+    });
+
     describe('Forgot Password Form', () => {
 
         it('is displayed', () => {

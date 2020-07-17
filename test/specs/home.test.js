@@ -10,6 +10,10 @@ describe('Home Page', () => {
         homePage.tabTitleIsDisplayed();
     });
 
+    it ('has a background image', () => {
+        homePage.backgroundImage();
+    });
+
     describe('Login Form', () => {
 
         it('is displayed', () => {

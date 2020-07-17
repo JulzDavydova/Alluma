@@ -13,6 +13,10 @@ class BasePage {
         const loginButton = $('button.gg-btn[value="login"]');
         loginButton.waitForDisplayed({ timeout: 10000 });
     }
+
+    backgroundImage() {
+        assert.equal($(selector.backgroungImg).getCSSProperty('background-image').value, expected.backgroungImg);
+    }
     
     formTitleIsCorrect() {
        const title = $$(selector.formTitle)[0];
